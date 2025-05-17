@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\walte\\source\\repos\\Trabajo final herramientas II\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72A383A-1E58-4C0A-9DDB-3246CAE31E59}|Trabajo final herramientas II.csproj|c:\\users\\walte\\source\\repos\\trabajo final herramientas ii\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72A383A-1E58-4C0A-9DDB-3246CAE31E59}|Trabajo final herramientas II.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D72A383A-1E58-4C0A-9DDB-3246CAE31E59}|Trabajo final herramientas II.csproj|c:\\users\\walte\\source\\repos\\trabajo final herramientas ii\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72A383A-1E58-4C0A-9DDB-3246CAE31E59}|Trabajo final herramientas II.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72A383A-1E58-4C0A-9DDB-3246CAE31E59}|Trabajo final herramientas II.csproj|C:\\Users\\walte\\source\\repos\\Trabajo final herramientas II\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72A383A-1E58-4C0A-9DDB-3246CAE31E59}|Trabajo final herramientas II.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\walte\\source\\repos\\Trabajo final herramientas II\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\walte\\source\\repos\\Trabajo final herramientas II\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwDUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T23:19:09.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\walte\\source\\repos\\Trabajo final herramientas II\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

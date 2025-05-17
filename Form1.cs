@@ -41,5 +41,37 @@ namespace Trabajo_final_herramientas_II
             }
         
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=DESKTOP-0KBBNKK;Initial Catalog=Herramientas;Integrated Security=True";
+
+            string query = "INSERT INTO Clientes (Nombre, Apellido, Telefono, TipoMembresia) VALUES (@Nombre, @Apellido, @Telefono, @TipoMembresia)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                
+                command.Parameters.AddWithValue("@Nombre", txtNombre.Text);
+                command.Parameters.AddWithValue("@Apellido", txtApellido.Text);
+                command.Parameters.AddWithValue("@Telefono", txtTelefono.Text);
+                command.Parameters.AddWithValue("@TipoMembresia", cmbMembresia.SelectedItem.ToString());
+
+                try
+                {
+                    connection.Open();
+                    int result = command.ExecuteNonQuery();
+
+                    if (result > 0)
+                        MessageBox.Show("Cliente registrado exitosamente.");
+                    else
+                        MessageBox.Show("No se insertó ningún dato.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
     }
 }
