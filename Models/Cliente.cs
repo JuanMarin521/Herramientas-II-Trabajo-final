@@ -8,7 +8,7 @@ namespace Trabajo_final_herramientas_II.Models
 {
     public class Cliente : Usuario
     {
-        public string TipoMembresia { get; set; } // Básico, VIP, Premium
+        public string TipoMembresia { get; set; }
 
         public Cliente()
         {
@@ -17,7 +17,8 @@ namespace Trabajo_final_herramientas_II.Models
 
         public override void MostrarPermisos()
         {
-            Console.WriteLine("Acceso limitado a clases según membresía.");
+            // Lógica específica para clientes
+            Console.WriteLine("Permisos: Ver e inscribirse en clases disponibles según su membresía.");
         }
     }
 }
