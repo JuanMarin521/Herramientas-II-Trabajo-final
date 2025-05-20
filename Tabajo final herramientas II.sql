@@ -23,13 +23,13 @@ CREATE TABLE Instructores (
     Disponibilidad BIT -- 1 = disponible, 0 = no disponible
 );
 
--- Tabla: Clases
 CREATE TABLE Clases (
     ClaseID INT PRIMARY KEY IDENTITY,
     NombreClase NVARCHAR(50),
     TipoClase NVARCHAR(50),
     Horario DATETIME,
-    CupoMaximo INT
+    CupoMaximo INT,
+    InstructorID INT NULL FOREIGN KEY REFERENCES Instructores(InstructorID)
 );
 
 -- Tabla: Reservas
@@ -48,3 +48,81 @@ CREATE TABLE Asistencias (
     ClaseID INT FOREIGN KEY REFERENCES Clases(ClaseID),
     FechaAsistencia DATETIME
 );
+
+-- Tabla: Usuarios para el login
+CREATE TABLE Usuarios (
+    UsuarioID INT PRIMARY KEY IDENTITY,
+    NombreUsuario NVARCHAR(50) NOT NULL,
+    Contraseña NVARCHAR(100) NOT NULL,
+    Rol NVARCHAR(20) NOT NULL
+);
+
+-- ======================================
+-- PROCEDIMIENTOS ALMACENADOS
+-- ======================================
+
+-- 1. Registrar Reserva (verifica cupo)
+CREATE PROCEDURE SP_RegistrarReserva
+    @ClienteID INT,
+    @ClaseID INT
+AS
+BEGIN
+    DECLARE @CupoMaximo INT;
+    DECLARE @Reservados INT;
+
+    SELECT @CupoMaximo = CupoMaximo FROM Clases WHERE ClaseID = @ClaseID;
+    SELECT @Reservados = COUNT(*) FROM Reservas WHERE ClaseID = @ClaseID AND Estado = 'Activa';
+
+    IF @Reservados < @CupoMaximo
+    BEGIN
+        INSERT INTO Reservas (ClienteID, ClaseID, FechaReserva, Estado)
+        VALUES (@ClienteID, @ClaseID, GETDATE(), 'Activa');
+    END
+    ELSE
+    BEGIN
+        RAISERROR('Clase llena', 16, 1);
+    END
+END;
+GO
+
+-- 2. Cancelar Reserva (solo si faltan +24h)
+CREATE PROCEDURE SP_CancelarReserva
+    @ReservaID INT
+AS
+BEGIN
+    DECLARE @FechaReserva DATETIME;
+
+    SELECT @FechaReserva = FechaReserva FROM Reservas WHERE ReservaID = @ReservaID;
+
+    IF DATEDIFF(HOUR, GETDATE(), @FechaReserva) >= 24
+    BEGIN
+        UPDATE Reservas SET Estado = 'Cancelada' WHERE ReservaID = @ReservaID;
+    END
+    ELSE
+    BEGIN
+        RAISERROR('Solo se puede cancelar con al menos 24 horas de anticipación.', 16, 1);
+    END
+END;
+GO
+
+-- 3. Asignar Instructor (verifica disponibilidad)
+CREATE PROCEDURE SP_AsignarInstructor
+    @ClaseID INT,
+    @InstructorID INT
+AS
+BEGIN
+    DECLARE @Disponible BIT;
+
+    SELECT @Disponible = Disponibilidad FROM Instructores WHERE InstructorID = @InstructorID;
+
+    IF @Disponible = 1
+    BEGIN
+        UPDATE Clases SET InstructorID = @InstructorID WHERE ClaseID = @ClaseID;
+        UPDATE Instructores SET Disponibilidad = 0 WHERE InstructorID = @InstructorID;
+    END
+    ELSE
+    BEGIN
+        RAISERROR('Instructor no disponible.', 16, 1);
+    END
+END;
+GO

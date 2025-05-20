@@ -51,7 +51,7 @@ namespace Trabajo_final_herramientas_II.Forms
                         new FormInstructor(usuario).Show();
                         break;
                     case "Cliente":
-                        new FormCliente(usuario).Show(); 
+                        new FormUsuario(usuario).Show(); 
                         break;
                     default:
                         MessageBox.Show("Rol no reconocido.");

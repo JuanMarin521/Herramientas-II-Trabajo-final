@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabajo_final_herramientas_II.Forms;
 
 namespace Trabajo_final_herramientas_II
 {
@@ -16,7 +17,8 @@ namespace Trabajo_final_herramientas_II
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormClientes());
+
+            Application.Run(new LoginForm());
         }
     }
 }

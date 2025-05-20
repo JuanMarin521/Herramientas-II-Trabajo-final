@@ -8,3 +8,17 @@ C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo fina
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo final herramientas II.exe
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo final herramientas II.pdb
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo_final_herramientas_II.FormClientes.resources
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo final herramientas II.csproj.AssemblyReference.cache
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo_final_herramientas_II.Forms.FormAdministrador.resources
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo_final_herramientas_II.FormClientes.resources
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo_final_herramientas_II.Forms.FormUsuario.resources
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo_final_herramientas_II.Forms.LoginForm.resources
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo_final_herramientas_II.Properties.Resources.resources
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo final herramientas II.csproj.GenerateResource.cache
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo final herramientas II.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo final herramientas II.exe
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo final herramientas II.pdb
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\obj\Debug\Trabajo_final_herramientas_II.Forms.FormInstructor.resources
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\bin\Debug\Trabajo final herramientas II.exe.config
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\bin\Debug\Trabajo final herramientas II.exe
+C:\Users\Pablo\Source\Repos\Herramientas-II-Trabajo-final\bin\Debug\Trabajo final herramientas II.pdb
