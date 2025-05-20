@@ -2,9 +2,9 @@ C:\Users\walte\source\repos\Trabajo final herramientas II\bin\Debug\Trabajo fina
 C:\Users\walte\source\repos\Trabajo final herramientas II\bin\Debug\Trabajo final herramientas II.exe
 C:\Users\walte\source\repos\Trabajo final herramientas II\bin\Debug\Trabajo final herramientas II.pdb
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo final herramientas II.csproj.AssemblyReference.cache
-C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo_final_herramientas_II.Form1.resources
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo_final_herramientas_II.Properties.Resources.resources
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo final herramientas II.csproj.GenerateResource.cache
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo final herramientas II.csproj.CoreCompileInputs.cache
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo final herramientas II.exe
 C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo final herramientas II.pdb
+C:\Users\walte\source\repos\Trabajo final herramientas II\obj\Debug\Trabajo_final_herramientas_II.FormClientes.resources
